@@ -1,0 +1,174 @@
+{
+  "TransferType": "ConfigTransfer",
+  "ID": 4,
+  "Name": "validating",
+  "CreatedByProduct": "Integray",
+  "CreatedByVersion": "dev-2024-02.001 2024-02-21 08:35:12\n",
+  "CreatedBy": "Martin Šlachta",
+  "CreatedByUrl": "https://martinslachta.integray.app",
+  "TransferVersion": 3,
+  "Created": "2024-02-21T08:57:07.9704765Z",
+  "Tasks": [
+    {
+      "Description": null,
+      "Type": 1,
+      "Cron": "0 0 * ? * * *",
+      "Priority": 99,
+      "DisposeData": false,
+      "IsRunnable": true,
+      "MaxInstances": 1,
+      "TaskRunSuccessDays": null,
+      "TaskRunFailedDays": null,
+      "TimeSchedule": null,
+      "TaskGroupCopyID": null,
+      "TemplateCopyID": null,
+      "Steps": [
+        {
+          "Timeout": 60,
+          "InputProcessType": 2,
+          "InputProcessThreads": null,
+          "StopIfEmptyOutput": true,
+          "ConnectorStorageSize": 10,
+          "DataSnapshotCondition": 1,
+          "InputSchemaMapping": null,
+          "ErrorBehavior": 1,
+          "InputDataFilter": null,
+          "IsTempDeactivated": false,
+          "Attempts": 1,
+          "AttemptsDelay": 5,
+          "Connector": {
+            "Guid": "a1865bf9-504c-43c7-89d5-b9a940432d44",
+            "Version": "3.0.3"
+          },
+          "AgentCopyID": null,
+          "PrevStepCopyID": null,
+          "InputSchema": null,
+          "OutputSchema": null,
+          "Configurations": [
+            {
+              "ConfigurationCopyID": "465cabac-4371-4c73-97cf-43f84397e097",
+              "ConfigurationSchema": {
+                "Guid": "bf088f0f-0da3-46f8-8a94-cdca6e127841",
+                "Version": "1.0.0"
+              },
+              "ID": 608,
+              "Name": null,
+              "CopyID": "960960e6-5449-44a4-bb11-4aaec317c65b"
+            }
+          ],
+          "AdditionalInputs": null,
+          "ID": 102,
+          "Name": "Step #1",
+          "CopyID": "b05b00b3-58c4-4637-8b6a-08e445a470a8"
+        }
+      ],
+      "ID": 37,
+      "Name": "Test",
+      "CopyID": "07459b6c-2b6c-492b-93b7-e0c875e2f11e"
+    },
+    {
+      "Description": null,
+      "Type": 1,
+      "Cron": "0 0 * ? * * *",
+      "Priority": 99,
+      "DisposeData": false,
+      "IsRunnable": true,
+      "MaxInstances": 1,
+      "TaskRunSuccessDays": null,
+      "TaskRunFailedDays": null,
+      "TimeSchedule": null,
+      "TaskGroupCopyID": null,
+      "TemplateCopyID": null,
+      "Steps": [
+        {
+          "Timeout": 60,
+          "InputProcessType": 2,
+          "InputProcessThreads": null,
+          "StopIfEmptyOutput": true,
+          "ConnectorStorageSize": 10,
+          "DataSnapshotCondition": 1,
+          "InputSchemaMapping": null,
+          "ErrorBehavior": 1,
+          "InputDataFilter": null,
+          "IsTempDeactivated": false,
+          "Attempts": 1,
+          "AttemptsDelay": 5,
+          "Connector": {
+            "Guid": "a1865bf9-504c-43c7-89d5-b9a940432d44",
+            "Version": "3.0.3"
+          },
+          "AgentCopyID": null,
+          "PrevStepCopyID": null,
+          "InputSchema": null,
+          "OutputSchema": null,
+          "Configurations": [
+            {
+              "ConfigurationCopyID": "41f9fd9b-3ccc-4772-90d2-84d0e1813eb2",
+              "ConfigurationSchema": {
+                "Guid": "bf088f0f-0da3-46f8-8a94-cdca6e127841",
+                "Version": "1.0.0"
+              },
+              "ID": 609,
+              "Name": null,
+              "CopyID": "33aec189-14a2-42a4-943d-0e4371f7bc86"
+            }
+          ],
+          "AdditionalInputs": null,
+          "ID": 103,
+          "Name": "Step #1",
+          "CopyID": "88b780e7-d0a5-4550-b60e-bb2e5d87316d"
+        }
+      ],
+      "ID": 38,
+      "Name": "Test 2",
+      "CopyID": "24b867f7-3ef6-4c01-a5a5-b50628939d32"
+    }
+  ],
+  "Connectors": [
+    {
+      "Name": "Delay",
+      "Guid": "a1865bf9-504c-43c7-89d5-b9a940432d44",
+      "Version": "3.0.3"
+    }
+  ],
+  "DataSchemas": [],
+  "Agents": [],
+  "TaskGroups": [],
+  "EndpointGroups": [],
+  "Endpoints": [],
+  "SecondaryTokens": [],
+  "Configurations": [
+    {
+      "Configuration": "{\"Delay\":1}",
+      "IsShared": false,
+      "ConfigurationSchema": {
+        "Guid": "bf088f0f-0da3-46f8-8a94-cdca6e127841",
+        "Version": "1.0.0"
+      },
+      "TaskCopyID": "07459b6c-2b6c-492b-93b7-e0c875e2f11e",
+      "TemplateCopyID": null,
+      "ID": 134,
+      "Name": "Step #1",
+      "CopyID": "465cabac-4371-4c73-97cf-43f84397e097"
+    },
+    {
+      "Configuration": "{\"Delay\":1}",
+      "IsShared": false,
+      "ConfigurationSchema": {
+        "Guid": "bf088f0f-0da3-46f8-8a94-cdca6e127841",
+        "Version": "1.0.0"
+      },
+      "TaskCopyID": "24b867f7-3ef6-4c01-a5a5-b50628939d32",
+      "TemplateCopyID": null,
+      "ID": 135,
+      "Name": "Step #1",
+      "CopyID": "41f9fd9b-3ccc-4772-90d2-84d0e1813eb2"
+    }
+  ],
+  "Variables": [],
+  "EntityComments": [],
+  "VariableGroups": [],
+  "Templates": [],
+  "Tags": [],
+  "TagMappings": []
+}
